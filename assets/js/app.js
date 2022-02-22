@@ -6,7 +6,7 @@ function changeRgbColor() {
     return `rgb(${red},${green},${blue})`
 }
 document.getElementById('btn').addEventListener('click', function () {
-    const bodyBg = document.getElementById('body-bg');
+    const bodyBg = document.getElementById('container');
     const colorCode = document.getElementById('color-code');
     bodyBg.style.backgroundColor = changeRgbColor();
     colorCode.innerText = changeRgbColor();
